@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>WELCOME</title>
+</head>
+<body style="background:url(./imgs/background1.jpg);">
+<script>
+function valid1()
+{var x=document.forms["lin"]["n1"].value;
+ var y=document.forms['lin']['n2'].value;
+ if((x=="") && (y==""))
+   {alert("Please fill the username and password");
+ }
+   function login()
+     {
+	window.location=("page2.html")
+}
+function create()
+{
+window.alert(" Your account has been created succesfully, confirm email for logging in")
+}
+</script>
+<font color= "white" face="Lucida sans">
+<section>
+<h1><center>DJ STORE</center></h1><hr>
+</section>
+<aside style="float:right; width:40%; padding-left:5px;">
+Kindly login, to access DJ Store
+<form name="lin" onsubmit="valid1()">
+Email or Phone: <input type="text" placeholder="enter username" name="n1"><br>
+Password:       <input type="password" placeholder="enter password" name='n2'>
+<a href="page2.html"><input style="cursor:pointer" type="button" value="LogIn">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="reset.html"><font color= "lime" face="Lucida sans" size=-2>
+forgotten password? We can help</font></a>
+</form>
+<h3>New to DJ Store? Create your account</h3>
+<form>
+<input type="text" placeholder="First Name" style=" height:28px; width: 200px;font-size: 20px;">
+<input type="text" placeholder="Last Name" style=" height:28px; width: 200px;font-size: 20px;"><br><br>
+<input type="text" placeholder="Email Address" style=" height:28px; width: 400px;font-size: 20px;"><br><br>
+<input type="text" placeholder="Enter Mobile Number" maxlength="10" style=" height:28px; width: 400px;font-size: 20px;"><br><br>
+<input type="password" placeholder="Enter password" style=" height:28px; width: 400px;font-size: 20px;"><br><br>
+<input type="password" placeholder="Confirm Password"style=" height:28px; width: 400px;font-size: 20px;"><br><br>
+Date of Birth:
+<input type="date" style=" height:28px; width: 200px;font-size: 20px;"><br><br>
+Gender: <input type="radio" name="Gender" value="Male">Male
+<input type="radio" name="Gender" value="Female">Female<br>
+<input style="cursor:pointer; padding:15px 30px;" type="button" value="Create my account" onclick="create()">
+<input type="reset"style="cursor:pointer;">
+</aside>
+<pre>
+      <iframe src="slideshow.html" height="540" width="700"></iframe>
+</pre>
+
+</body>
+</html>
